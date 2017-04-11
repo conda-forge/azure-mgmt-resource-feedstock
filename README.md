@@ -11,6 +11,18 @@ Summary: Microsoft Azure Resource Management Client Library for Python
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/azure-mgmt-resource-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-mgmt-resource-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/azure-mgmt-resource-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/azure-mgmt-resource-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/azure-mgmt-resource-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/azure-mgmt-resource-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-mgmt-resource/badges/version.svg)](https://anaconda.org/conda-forge/azure-mgmt-resource)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-mgmt-resource/badges/downloads.svg)](https://anaconda.org/conda-forge/azure-mgmt-resource)
+
 Installing azure-mgmt-resource
 ==============================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `azure-mgmt-resource` available on
 ```
 conda search azure-mgmt-resource --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/azure-mgmt-resource-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-mgmt-resource-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/azure-mgmt-resource-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/azure-mgmt-resource-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/azure-mgmt-resource-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/azure-mgmt-resource-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-mgmt-resource/badges/version.svg)](https://anaconda.org/conda-forge/azure-mgmt-resource)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-mgmt-resource/badges/downloads.svg)](https://anaconda.org/conda-forge/azure-mgmt-resource)
 
 
 Updating azure-mgmt-resource-feedstock
