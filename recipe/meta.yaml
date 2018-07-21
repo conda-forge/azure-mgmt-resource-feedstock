@@ -1,26 +1,30 @@
-{% set version = "0.20.1" %}
+{% set name = "azure-mgmt-resource" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "fe65dc43c8643a8c3e731783e98334258bf5dc57cf4ae063401e2b05b9d71d71" %}
 
 package:
-  name: azure-mgmt-resource
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: azure-resource-{{ version }}.zip
-  url: https://pypi.io/packages/source/a/azure-mgmt-resource/azure-mgmt-resource-{{ version }}.zip
-  md5: d90bfc9fa4cc09d765e75627cd642505
-  
+  fn: {{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  sha256: {{ sha256 }}
+
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
   number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
+    - python >=3
     - setuptools
-    - azure-mgmt-common
+    - pip
   run:
-    - python
-    - azure-mgmt-common
+    - python >=3
+    - azure-common >=1.1
+    - msrestazure >=0.4.11
 
 test:
   imports:
