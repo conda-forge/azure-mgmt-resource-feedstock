@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-resource" %}
-{% set version = "6.0.0" %}
-{% set sha256 = "e04e867af9289a237cfe285995025555fcceb90de5deb420c540dca3a4c9c622" %}
+{% set version = "9.0.0" %}
+{% set sha256 = "dc12f7998e2c1fd4088a8da5f02936c2985ceb7acbe994571c8b3778f26a7501" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +37,7 @@ test:
 about:
   home: https://github.com/Azure/azure-sdk-for-python
   license: Apache-2.0
-  summary: 'Microsoft Azure Resource Management Client Library for Python'
+  summary: Microsoft Azure Resource Management Client Library for Python
 
 extra:
   recipe-maintainers:
