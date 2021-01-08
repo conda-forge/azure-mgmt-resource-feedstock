@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-resource" %}
-{% set version = "6.0.0" %}
-{% set sha256 = "e04e867af9289a237cfe285995025555fcceb90de5deb420c540dca3a4c9c622" %}
+  {% set version = "15.0.0" %}
+{% set sha256 = "80ecb69aa21152b924edf481e4b26c641f11aa264120bc322a14284811df9c14" %}
 
 package:
   name: {{ name|lower }}
@@ -18,13 +18,14 @@ build:
 
 requirements:
   build:
-    - python >=3
+    - python >=3.6
     - setuptools
     - pip
   run:
-    - python >=3
-    - azure-common >=1.1
-    - msrestazure >=0.4.11
+    - python >=3.6
+    - azure-common >=1.1,<2.0.0
+    - azure-mgmt-core >=1.2.0,<2.0.0
+    - msrest >=0.5.0
 
 test:
   imports:
@@ -36,9 +37,12 @@ test:
 
 about:
   home: https://github.com/Azure/azure-sdk-for-python
-  license: Apache-2.0
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
   summary: 'Microsoft Azure Resource Management Client Library for Python'
 
 extra:
   recipe-maintainers:
     - Maxyme
+    - dhirschfeld
