@@ -37,7 +37,9 @@ test:
 
 about:
   home: https://github.com/Azure/azure-sdk-for-python
-  license: Apache-2.0
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
   summary: 'Microsoft Azure Resource Management Client Library for Python'
 
 extra:
