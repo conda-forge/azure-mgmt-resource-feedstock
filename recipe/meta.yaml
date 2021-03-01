@@ -1,6 +1,6 @@
+{% set version = "16.0.0" %}
 {% set name = "azure-mgmt-resource" %}
-  {% set version = "15.0.0" %}
-{% set sha256 = "80ecb69aa21152b924edf481e4b26c641f11aa264120bc322a14284811df9c14" %}
+{% set sha256 = "0bdbdc9c1ed2ef975d8dff45f358d1e06dc6761eace5b6817f13993447e48a68" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - setuptools
     - pip
@@ -36,11 +36,11 @@ test:
     - python -m unittest discover -p "test_*.py"
 
 about:
-  home: https://github.com/Azure/azure-sdk-for-python
+  home: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/resources/azure-mgmt-resource
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Microsoft Azure Resource Management Client Library for Python'
+  summary: Microsoft Azure Resource Management Client Library for Python
 
 extra:
   recipe-maintainers:
