@@ -1,7 +1,7 @@
 About azure-mgmt-resource
 =========================
 
-Home: https://github.com/Azure/azure-sdk-for-python
+Home: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/resources/azure-mgmt-resource
 
 Package license: MIT
 
@@ -36,6 +36,7 @@ Installing `azure-mgmt-resource` from the `conda-forge` channel can be achieved 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `azure-mgmt-resource` can be installed with:
