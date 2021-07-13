@@ -1,6 +1,6 @@
-{% set version = "18.0.0" %}
+{% set version = "18.1.0" %}
 {% set name = "azure-mgmt-resource" %}
-{% set sha256 = "551036e592f409ef477d30937ea7cc4dda5126576965d9c816fdb8401bbd774c" %}
+{% set sha256 = "f2fff54aa6f044c9691b938eb532a8462662c4967dc61df13d0be7d60c8e07fd" %}
 
 package:
   name: {{ name|lower }}
