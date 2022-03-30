@@ -5,7 +5,7 @@ Home: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/resources/az
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-resource-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-resource-feedstock/blob/main/LICENSE.txt)
 
 Summary: Microsoft Azure Resource Management Client Library for Python
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2768&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-mgmt-resource-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2768&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-mgmt-resource-feedstock?branchName=main">
       </a>
     </td>
   </tr>
