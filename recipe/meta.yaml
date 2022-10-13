@@ -1,6 +1,6 @@
-{% set version = "21.1.0" %}
+{% set version = "21.2.0" %}
 {% set name = "azure-mgmt-resource" %}
-{% set sha256 = "52965ade31cd059fea2b1513d65fe616046e433de0e583dcf5c9c9bebf3ebd69" %}
+{% set sha256 = "bf8a5de6c4dab5efc7f0d18d0f57165dee5231ea52d23d10d82e447b8c2a1a54" %}
 
 package:
   name: {{ name|lower }}
@@ -18,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - azure-common >=1.1,<2.0.0
-    - azure-mgmt-core >=1.3.0,<2.0.0
-    - msrest >=0.6.21
+    - azure-mgmt-core >=1.3.2,<2.0.0
+    - msrest >=0.7.1
 
 test:
   imports:
