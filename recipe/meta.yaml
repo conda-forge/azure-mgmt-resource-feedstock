@@ -30,11 +30,14 @@ requirements:
 test:
   files:
     - ./tests/
+  requires:
+    - tree
   imports:
     - azure
     - azure.mgmt
     - azure.mgmt.resource
   commands:
+    - tree ./
     - python -m unittest discover -p "test_*.py"
 
 about:
