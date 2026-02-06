@@ -1,6 +1,6 @@
-{% set version = "24.0.0" %}
+{% set version = "25.0.0" %}
 {% set name = "azure-mgmt-resource" %}
-{% set sha256 = "cf6b8995fcdd407ac9ff1dd474087129429a1d90dbb1ac77f97c19b96237b265" %}
+{% set sha256 = "dc123a9f6509c37299d7716c9090cff0a9d73309b228cc094ea950ce3cca3603" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - isodate >=0.6.1
     - python >={{ python_min }}
     - azure-common >=1.1
-    - azure-mgmt-core >=1.5.0
+    - azure-mgmt-core >=1.6.0
 
 test:
   requires:
